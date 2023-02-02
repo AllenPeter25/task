@@ -158,8 +158,8 @@ body {
 }
 
 .facebook-logo, .google-logo{
-    padding-left: 10px;
-    padding-right: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .facebook:hover{
@@ -197,18 +197,12 @@ hr {
 .form-input input{
     border:0.5 thin rgba(255, 255, 255, 0.5);
     height: 46px;
-    width: 300px;
+    width: 280px;
     padding-left: 15px;
     cursor: pointer;
 }
 
-.form-input input[type=text]:focus {
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
-    border: none;
-    outline: none;
-}
-
-.form-input input[type=password]:focus {
+.form-input input:focus {
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
     border: none;
     outline: none;
@@ -249,7 +243,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:focus {
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
 }
 
 .block{
@@ -258,4 +252,34 @@ input[type=checkbox]:focus {
     height: 18px;
     background-color: #3cb878;
     margin-right: 30px;
+}
+
+.box {
+    position: relative;
+    margin-right:15px;
+}
+
+.checkbox .check-mark {
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 10%;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+}
+
+.checkbox:focus .check-mark:focus{
+    box-shadow: 0px 30px 8px 0px rgba(0, 0, 0, 0.21);   
+}
+
+.checkbox input:checked ~ .check-mark:after {
+    content: "\2713";
+    color: #3cb878;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size:17px;
+    font-weight:bold;
 }
