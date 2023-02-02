@@ -1,10 +1,10 @@
 body{
-    width: 1366px;
-    height: 768px;
     padding-top: 49px;
     margin-left: 210px;
     margin-right: auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .cards>img{
