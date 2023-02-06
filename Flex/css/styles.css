@@ -44,6 +44,8 @@ header{
     font-size: 29px;
     font-weight: bold;
     line-height: 0.72;
+    cursor: pointer;
+    transition: 0.25s;
 }
 
 .company-name2{
@@ -51,6 +53,8 @@ header{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.17;
+    cursor: pointer;
+    transition: 0.25s;
 }
 
 .contact-info{
@@ -75,4 +79,39 @@ footer{
     font-family: Verdana;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
+}
+
+.price{
+    position: absolute;
+    margin-top: 137px;
+    margin-left: 2px;
+    background-color: rgba(255, 98, 0,0.75);
+    width: 278px;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.details{
+    display: flex;
+    gap: 111px
+}
+
+.from{
+    text-align: left;
+    font-size: 10px;
+    padding-bottom: 9px;
+}
+
+.cards:hover .price{
+    opacity: 1;
+}
+
+.cards:hover>p{
+    color: rgb(255, 98, 0);
+}
+
+.company-name:hover, .logo-image{
+    color: rgb(255, 98, 0);
 }
